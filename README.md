@@ -12,7 +12,24 @@ Ported packages are:
 
 ## Usage ##
 
-Load packages into Cuis image and follow the tutorial in 
+Load packages into a Cuis image. It is assumed that the Cuis-PetitParser folder is a sibling of the Cuis folder
+
+
+    | slash |
+    slash _ FileDirectory slash.
+    {
+      '..', slash, 'Cuis-PetitParser', slash, 'PetitParser.pck' .
+      '..', slash, 'Cuis-PetitParser', slash, 'PetitTests.pck' .
+      '..', slash, 'Cuis-PetitParser', slash, 'PetitTutorial.pck'
+    }
+    do:
+    [ :fileName | CodeFileBrowser installPackage:
+                 (FileStream concreteStream readOnlyFileNamed: fileName)
+    ]    
+
+
+
+Then follow the tutorial in 
 http://www.lukas-renggli.ch/blog/petitparser-1 and 
 http://www.lukas-renggli.ch/blog/petitparser-2 .
 
