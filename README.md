@@ -53,4 +53,4 @@ The ExpressionGrammar and Evaluator described in tutorial part 2 are included in
 
  http://www.themoosebook.org/book/internals/petit-parser
 
-
+ http://pharobooks.gforge.inria.fr/PharoByExampleTwo-Eng/latest/PetitParser.pdf
